@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Massage Theraphy Survery Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg">
+    <h1 id="title">Massage Theraphy Survery Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve our service, we always do our best to meet your expectations.</em></p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"><strong>Name</strong> <input id="name" type="text" required placeholder="Enter your full name"/></label>
+        <label for="email"id="email-label"><strong>Email</strong> <input id="email" type="email" required placeholder="Enter your email"/></label>
+        <label for="number" id="number-label"><strong>Age </strong>(optional) <input id="number" type="number" min="13" max="100" placeholder="Age"/></label>
+        <label for="services-provided" required> <strong>Which service/s did your require?</strong> (Check all that apply):
+          <label for="Relaxation-massage" name="Relaxation-massage" value="Relaxation-massage"><input type="checkbox" id="Relaxation-massage" name="Relaxation-massage" value="Relaxation-massage" class="inline"/> Relaxation Massage</label>
+          <label for="Deep-tissue-massage" name="Deep-tissue-massage" value="Deep-tissue-massage"><input type="checkbox" id="Deep-tissue-massage" name="Deep-tissue-massage" value="Deep-tissue-massage" class="inline"/> Deep Tissue Massage</label>
+          <label for="Hot-stone-massage" name="Hot-stone-massage" value="Hot-stone-massage"><input type="checkbox" id="Hot-stone-massage" name="Hot-stone-massage" value="Hot-stone-massage" class="inline"/> Hot Stone Massage</label>
+          <label for="Therapeutic-massage" name="Therapeutic-massage" value="Therapeutic-massage"><input type="checkbox" id="Therapeutic-massage" name="Therapeutic-massage" value="Therapeutic-massage" class="inline"/> Therapeutic Massage</label>
+          <label for="Prenatal-massage" name="Prenatal-massage" value="Prenatal-massage"><input type="checkbox" id="Prenatal-massage" name="Prenatal-massage" value="Prenatal-massage" class="inline"/> Prenatal Massage</label>
+          <label for="Myofascial-Cupping" name="Myofascial-Cupping" value="Myofascial-Cupping" ><input type="checkbox" id="Myofascial-Cupping" name="Myofascial-Cupping" "Myofascial-Cupping" value="Myofascial-Cupping" class="inline"/> Myofascial Cupping</label>
+        <label for="dropdown"><strong>Rate your experience from 1 to 5 stars:</strong>
+          <select id="dropdown">
+            <option value="">(select a rating)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <label for="marketing"><strong>Would you recommend Massage Theraphy to your friends and family?</strong>
+          <label for="Yes"><input id="Yes" name="recommendation" type="radio" value="Yes" class="inline"/> Yes</label>
+          <label for="No"><input id="No" name="recommendation" type="radio" value="No" class="inline"/> No</label>
+          <label for="Maybe"><input id="Maybe" name="recommendation" type="radio" value="Maybe" class="inline"/> Maybe</label>
+          <label for="Not-sure"><input id="Not-sure" name="recommendation" type="radio" value="Not-sure" class="inline"/> Not Sure</label>
+          
+        <label for="comments"><strong>Any additional comments or suggestions?</strong>
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments or suggestions here..."></textarea>
+        <input type="submit" value="Submit" id="submit"/>
+      </fieldset>
+    </form>
+  
+
+ 
+    
+  </body>
+  <footer>Massage Theraphy 2022</footer>
+</html>
